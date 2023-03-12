@@ -1,0 +1,24 @@
+def group_words(s):
+    d = {}
+    for word in s.split():
+        if word[0] in d:
+            d[word[0]].append(word)
+        else:
+            d[word[0]] = [word]
+    return list(d.values())
+
+
+def group_words_by_first_char(s):
+    words = s.split()
+    d = {}
+    for w in words:
+        if w[0] not in d:
+            d[w[0]] = []
+        d[w[0]].append(w)
+    return list(d.values())
+
+def solution_4lines(str):
+    dic={word[0]:[] for word in str.split()}
+    for word in str.split():
+        dic[word[0]].append(word)
+    return list(dic.values())
