@@ -1,0 +1,44 @@
+This week we will focus on list comprehensions, check out this video that talks about it.
+
+Watch the video https://www.youtube.com/watch?v=1HlyKKiGg-4
+
+
+Solve the following examples, ideally with one line only.
+
+1. Given a list of strings return a list of lengths of the strings
+>>> list_len(['hello world', 'namaskar', 'bon jour', 'nin hao', 'namaste'])
+[11, 8, 8, 7, 7]
+
+2. Given a list of strings count the number of times a character appears in all the strings
+
+>>> count_char(['hello world', 'namaskar', 'bon jour', 'nin hao', 'namaste'], 'c')
+0
+>>> count_char(['hello world', 'namaskar', 'bon jour', 'nin hao', 'namaste'], 'o')
+5
+
+3. Given a list of strings return a list of length of words making up the string, where word
+is space separated string. words in 'hello world' are 'hello' and 'world'
+
+>>> word_lengths(['hello world', 'namaskar', 'bon jour', 'nin hao', 'namaste'])
+[[5, 5], [8], [3, 4], [3, 3], [7]]
+
+4 Given a list of strings return the shortest word making up the string, where word
+is space separated string. words in 'hello world' are 'hello' and 'world'
+
+>>> shortest_word(['hello world', 'namaskar', 'bon jour', 'ni hao', 'namaste'])
+'ni'
+
+
+5. Given a list of strings return the longest word making up the string, where word
+is space separated string. words in 'hello world' are 'hello' and 'world'
+
+>>> longest_word(['hello world', 'namaskar', 'bon jour', 'ni hao', 'namaste'])
+'namaskar'
+
+6. Given a list of strings return the strings that have more than 1 words.
+
+>>> multiple_words(['hello world', 'namaskar', 'bon jour', 'ni hao', 'namaste'])
+['hello world', 'bon jour', 'ni hao']
+
+
+
